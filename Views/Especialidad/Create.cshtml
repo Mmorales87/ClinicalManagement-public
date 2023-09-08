@@ -1,0 +1,31 @@
+@model Turnos.Models.Especialidad
+
+<h4> <i class="material-icons prefix">star_rate</i> Especialidad </h4>
+<hr>
+<div class="row">
+    <form class="col s12" asp-action="Create">
+        <div asp-validation-summary="ModelOnly"></div>
+
+        <div class="row">
+
+            <label asp-for="Descripcion"></label>
+            <input asp-for="Descripcion" />
+
+            <span asp-validation-for="Descripcion"></span>
+        </div>
+
+        <div class="row">
+            <div class="col s6 m6">
+                <button class="btn waves-effect waves-light green" type="submit" name="action">Grabar
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+            <div class="col s6 m6">
+                <a class="btn waves-effect waves-light black" asp-action="Index"><i
+                        class="material-icons left">undo</i>Volver</a>
+            </div>
+        </div>
+    </form>
+</div>
+<br>
+<br>
